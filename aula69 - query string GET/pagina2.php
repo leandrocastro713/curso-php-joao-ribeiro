@@ -13,14 +13,15 @@
     if(trim($n) == '') {$n = 'NON';}
     if(trim($s) == '') {$s = 'NoSn';}
     if(!isset($_COOKIE['nome_e_sobrenome'])){
-      setcookie('nome_e_sobrenome', 'estava vazio', time() + 365);
+      setcookie('nome_e_sobrenome', 'estava vazio', time() + 60*60*24*30*12*365);
     }else{
-      setcookie('nome_e_sobrenome', $n.' '.$s, time() + 365 *12*30*24);
+      setcookie('nome_e_sobrenome', $n.' '.$s, time() + 60*60*24*30*12*365); //S M H D M A
     }
   ?>
   <h3>
     Nome vindo da pagina 1: <?=$n?> <br>
-    Sobrenome vindo da pagina 1: <?=$s?>
+    Sobrenome vindo da pagina 1: <?=$s?> <br>
+    Total do saldo: <?=$n.' '.$s?>
   </h3>
 
 </body>

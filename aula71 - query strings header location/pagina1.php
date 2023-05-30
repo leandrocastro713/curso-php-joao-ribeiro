@@ -9,14 +9,14 @@
 <body>
   
   <?php
-    $nome = "leandro";
-    $sobrenome = "azambuja de castro";
+    $n = 'Chico';
+    $s = 'Xavier';
   ?>
   
   <h3>Pagina 1</h3>
-  <h3>Nome = <?=$nome?></h3>
-  <h3>Sobrenome = <?=$sobrenome?></h3> <br>
-  <a href="pagina2.php?nome=<?=$nome?>&sobrenome=<?=$sobrenome?>">Ir para pagina 2</a>
+  <h3>Nome = <?=$n?></h3>
+  <h3>Sobrenome = <?=$s?></h3> <br>
+  <a href="pagina2.php?nome=<?=$n?>&sobrenome=<?=$s?>">Ir para pagina 2</a>
 
 </body>
 </html>
